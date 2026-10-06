@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec \"node --env-file=.env\" src/index.js",
+    "start": "node --env-file=.env src/index.js",
+    "test:db": "node --env-file=.env src/db/test-connection.js",
+    "preinstall": "node scripts/only-pnpm.js",
+    "lint": "eslint src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.0",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "express": "^4.22.3",
+    "express-promise-router": "^4.1.1",
+    "jsonwebtoken": "^9.0.3",
+    "md5": "^2.3.0",
+    "morgan": "^1.12.1",
+    "pg": "^8.23.1",
+    "zod": "^4.6.5"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "nodemon": "^3.1.14"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bcrypt"
+    ]
+  }
+}

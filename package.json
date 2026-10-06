@@ -1,0 +1,10 @@
+{
+  "name": "pern-stack",
+  "private": true,
+  "packageManager": "pnpm@10.28.0",
+  "scripts": {
+    "install:all": "pnpm --dir backend install && pnpm --dir frontend install",
+    "dev:backend": "pnpm --dir backend dev",
+    "dev:frontend": "pnpm --dir frontend dev"
+  }
+}
